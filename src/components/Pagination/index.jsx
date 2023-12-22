@@ -15,10 +15,23 @@ export const Pagination = ({countPerPage, totalPages, paginate, currentPage}) =>
       return 0
     }
     if(currentPage == pageNumbers.length) {
-      return pageNumbers.length - 2
+      return pageNumbers.length - 5
     }
+
+    if(currentPage == 39) {
+      return pageNumbers.length - 5
+    }
+
+    if(currentPage == 38) {
+      return pageNumbers.length - 5
+    }
+
     if(currentPage + 2 > pageNumbers.length) {
       return -(currentPage + 2) + currentPage - 2
+    }
+
+    if(currentPage === 3) {
+      return 1
     }
     return currentPage - 2
   }
@@ -32,19 +45,30 @@ export const Pagination = ({countPerPage, totalPages, paginate, currentPage}) =>
       return pageNumbers.length
     }
 
+    if(currentPage == 38) {
+      return pageNumbers.length
+    }
+
+    if(currentPage == 1) {
+      return 5
+    }
+
     if(currentPage - 2 < 0) {
       return (-(currentPage - 2) + currentPage) + 2
     }
 
-    if(currentPage == 1) {
-      return 2
+    if(currentPage === 2) {
+      return 5
     }
 
-    return currentPage + 2
+    if(currentPage === 3) {
+      return 5
+    }
+
+    return currentPage + 1
   }
 
   const temporaryPages = pageNumbers.slice(start(), finish())
-
   return ( 
     <ul className="pagination">
       <li 

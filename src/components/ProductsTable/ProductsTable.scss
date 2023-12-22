@@ -51,8 +51,14 @@
   }
 
   &__mobile_hide {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 768px) {
       display: none;
+    }
+  }
+
+  &__mobile_center {
+    @media screen and (max-width: 768px) {
+      text-align: center!important;
     }
   }
 }

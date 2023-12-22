@@ -10,7 +10,7 @@ export const ProductsTable = ({table}) => {
             <th>Customer Name</th>
             <th className="products-table__mobile_hide">Company</th>
             <th className="products-table__mobile_hide">Phone number</th>
-            <th>Email</th>
+            <th className="products-table__mobile_center">Email</th>
             <th className="products-table__mobile_hide">Country</th>
             <th className="products-table__status">Status</th>
           </tr>
