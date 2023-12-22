@@ -1,0 +1,60 @@
+.menu {
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 46px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9197B3;
+    padding: 11px;
+    padding-right: 8px;
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+      height: auto;
+      padding: 11px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &.active {
+      border-radius: 8px;
+      background-color: #5932EA;
+      color: #fff;
+
+      & path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+
+  &__label {
+    margin-right: auto;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

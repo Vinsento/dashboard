@@ -1,0 +1,19 @@
+.temporary-page {
+  padding-left: 71px;
+  padding-top: 41px;
+  padding-right: 95px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+  
+  &__messagee-box {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 40px 40px 38px;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+  padding: 28px;
+  padding-top: 36px;
+  padding-bottom: 76px;
+  height: 100%;
+  background-color: #fff;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    height: 100%;
+    padding: 14px;
+    padding-top: 36px;
+  }
+
+  &__logotype {
+    display: flex;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__logo-box {
+    display: flex;
+    justify-content: space-between;
+    width: 195px;
+    height: 39px;
+    margin-right: 4px;
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    max-width: 150px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 1%;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__version {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    align-self: end;
+    padding-bottom: 6px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__avatar {
+    margin-right: 14px;
+
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &__user {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    max-width: 155px;
+  }
+
+  &__userName {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #000;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__userPosition {
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 29px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media screen and (max-width: 768px) {
+    padding: 2px 6px;
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &.active {
+    background-color: rgba(22, 192, 152, 0.38);
+    color: #00B087;
+    border: 1px solid #00B087;
+  }
+
+  &.inactive {
+    background-color: #FFC5C5;
+    color: #DF0404;
+    border: 1px solid #DF0404;
+  }
+}

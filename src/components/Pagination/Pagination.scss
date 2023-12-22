@@ -1,0 +1,33 @@
+.pagination {
+  list-style: none;
+  display: flex;
+
+  &__page {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #404B52;
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &.active {
+      background-color: #5932EA;
+      color: #fff;
+    }
+  }
+
+  &__dots {
+    margin-right: 12px;
+  }
+}
